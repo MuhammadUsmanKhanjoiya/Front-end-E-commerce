@@ -39,7 +39,7 @@ function Add({ token }) {
 
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        backendUrl + "/api/product/add",
+        "http://localhost:8000" + "/api/product/add",
         formdata,
         {
           headers: {

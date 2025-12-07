@@ -9,8 +9,8 @@ import Login from "./pages/login";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
-export const currency = import.meta.env.VITE_STORE_CURRENCY_NAME;
+export const backendUrl = "http://localhost:8000";
+export const currency = 'PKR';
 function App() {
   const [token, setToken] = useState("");
   useEffect(() => {

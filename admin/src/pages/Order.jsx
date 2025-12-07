@@ -12,7 +12,7 @@ function Order() {
 
     try {
       const response = await axios.post(
-        backendUrl + "/api/order/list",
+        "http://localhost:8000" + "/api/order/list",
         {},
         { headers: { token } }
       );
